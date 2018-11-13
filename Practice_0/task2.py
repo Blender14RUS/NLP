@@ -7,7 +7,7 @@ i = 0
 
 with open(pathToFile, "r", encoding="utf8") as file:
     with open(pathToResultFile, "a+", encoding="utf8") as resultFile:
-        lines = file.readlines()
+        lines = file.readlines()[:1000000]
         wasWord = False
         for line in lines:
             i = i + 1
@@ -32,11 +32,6 @@ with open(pathToFile, "r", encoding="utf8") as file:
                     else:
                         resultContent = resultContent + firstWord
 
-                        # if firstWord == '<s>' or firstWord == '</s>':
                     wasWord = True
 
-            # else:
-            #     resultContent = resultContent + "\n"
         resultFile.write(resultContent)
-
-
