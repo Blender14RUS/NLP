@@ -1,0 +1,1 @@
+mystem -nl task3.txt mystem_result.txt
