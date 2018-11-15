@@ -1,0 +1,7 @@
+: all
+Ivan Aglaya Alexandra :: Parfen Nastasia Lef Gavrila Afanasy Ardalion
+Natalia Nastasia Ardalion :: Parfen Lev Ivan
+Sokolovitch Ivolgin Epanchin :: Nikitishna Philipovna Muishkin Borisovna
+Moscow Petersburg Tver Pavlofsk :: Paris
+
+:end

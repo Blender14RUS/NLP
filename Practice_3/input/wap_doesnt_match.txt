@@ -1,8 +1,0 @@
-: all
-Pierre Andrew Nicholas :: Pierre
-Natásha Ilyá Andrew :: Andrew
-Petersburg Moscow Paris :: Paris
-Alexander Napoleon Pierre :: Pierre
-war peace love :: war
-
-:end
