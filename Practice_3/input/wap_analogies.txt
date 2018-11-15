@@ -1,0 +1,25 @@
+: firstname-lastname
+Lef Muishkin
+Nastasia Philipovna
+Natalia Nikitishna
+Parfen Rogojin
+Ardalion Ivolgin
+Ivan Epanchin
+Aglaya Epanchina
+Alexandra Epanchina
+Afanasy Totski
+Gavrila Ivolgin
+
+: geo-name-location
+Moscow city
+Petersburg city
+Paris city
+Elizabethgrad city
+Tver city
+
+: child-father
+Ivan Alexandra
+Ivan Aglaya
+Ardalion Gavrila
+
+:end
