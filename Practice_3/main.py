@@ -22,17 +22,17 @@ with open("2638-0.txt", "r", encoding="utf8") as file:
             resultFile.write('\n')
 
 sentences = LineSentence("res.txt")
-model = gensim.models.Word2Vec(sentences, min_count=5, size=300, workers=4, window=10, sg=1, negative=5)
-print('Similar for "Muishkin".')
-print(model.wv.most_similar(positive=['Muishkin']))
+model = gensim.models.Word2Vec(sentences)
+print('Similar for "Marfa"')
+print(model.wv.most_similar(positive=['Marfa']))
 
 print('\nSimilar for "Petersburg"')
 print(model.wv.most_similar(positive=['Petersburg']))
 
-print('\nSimilar for "Gavrila"')
-print(model.wv.most_similar(positive=['Gavrila']))
+print('\nSimilar for "Ivolgin"')
+print(model.wv.most_similar(positive=['Ivolgin']))
 
-print('\nSimilar for "Sokolovitch"')
-print(model.wv.most_similar(positive=['Sokolovitch']))
+print('\nSimilar for "Aglaya"')
+print(model.wv.most_similar(positive=['Aglaya']))
 
-model.wv.save_word2vec_format("ResultPreproc.model")
+model.wv.save_word2vec_format("IDIOT_preproc.model")

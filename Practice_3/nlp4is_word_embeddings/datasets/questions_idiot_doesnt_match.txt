@@ -1,0 +1,35 @@
+::: Format of this file: terms-of-the-task :: the outlier-to-find
+: all
+Parfen Ivan Aglaya Alexandra :: Parfen
+Nastasia Aglaya Alexandra Ivan :: Nastasia
+Ivan Aglaya Alexandra Lef :: Lef
+Alexandra Aglaya Gavrila Ivan :: Gavrila
+Afanasy Aglaya Alexandra Ivan :: Afanasy
+Aglaya Alexandra Ivan Ardalion :: Ardalion
+Alexandra Marfa Aglaya Ivan :: Marfa
+Vera Alexandra Ivan Aglaya :: Vera
+Parfen Nastasia Daria Natalia :: Parfen
+Lev Natalia Nastasia Daria :: Lev
+Ivan Daria Natalia Nastasia :: Ivan
+Nastasia Afanasy Natalia Daria :: Afanasy
+Natalia Nastasia Antip Daria :: Antip
+Evgenie Daria Natalia Nastasia :: Evgenie
+Natalia Alexandr Daria Nastasia :: Alexandr
+Sokolovitch Epanchin Ivolgin Nikitishna :: Nikitishna
+Sokolovitch Epanchin Philipovna Ivolgin :: Philipovna
+Ivolgin Muishkin Epanchin Sokolovitch :: Muishkin
+Ivolgin Borisovna Epanchin Sokolovitch :: Borisovna
+Epanchin Ferdishenko Ivolgin Sokolovitch :: Ferdishenko
+Epanchin Rogojin Ivolgin Sokolovitch :: Rogojin
+Epanchin Sokolovitch Ivolgin Pavlovitch :: Pavlovitch
+: location
+Moscow Tver Gorohovaya Petersburg :: Gorohovaya
+Mattrossky Petersburg Moscow Tver :: Mattrossky
+Petersburg Wladimir Tver Moscow :: Wladimir
+work Moscow Tver Petersburg :: work
+Moscow fire Petersburg Tver :: fire
+Paris Switzerland Nativity Pavlofsk :: Nativity
+Paris Sadovaya Switzerland Pavlofsk :: Sadovaya
+work Paris Switzerland Pavlofsk :: work
+Switzerland Pavlofsk fire Paris :: fire
+Switzerland go Paris Pavlofsk :: go

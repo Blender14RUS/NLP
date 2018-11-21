@@ -92,7 +92,7 @@ def main():
     slices = slice_text(sent_token_list, slices_count)
     print(slices)
 
-    pos_index = create_positional_index(slices, True)
+    pos_index = create_positional_index(slices, False)
     pprint(pos_index)
 
 
