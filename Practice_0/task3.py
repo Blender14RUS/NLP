@@ -1,5 +1,5 @@
 import nltk
-nltk.download('stopwords')
+#nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 pathToFile = "./task2_text.txt"

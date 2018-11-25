@@ -18,7 +18,7 @@ with open("2638-0.txt", "r", encoding="utf8") as file:
 
             if not clear_tokens:
                 continue
-            resultFile.write(' '.join(clear_tokens))
+            resultFile.write(' '.join(intermediate))
             resultFile.write('\n')
 
 sentences = LineSentence("res.txt")
@@ -35,4 +35,4 @@ print(model.wv.most_similar(positive=['Ivolgin']))
 print('\nSimilar for "Aglaya"')
 print(model.wv.most_similar(positive=['Aglaya']))
 
-model.wv.save_word2vec_format("IDIOT_preproc.model")
+model.wv.save_word2vec_format("IDIOT.model")
