@@ -1,23 +1,3 @@
-specSymbols = """!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~«»"""
-#set flags for place where space is needed
-def where_space(char):
-    befor = False
-    after = True
-    #after this symbols don't print space
-    if char in "[(«\"":
-        befor = True
-        after = False
-    #spaces on both sides
-    elif char == '-':
-        befor = True
-        after = True
-    #shouldn't be rounded
-    elif char == '.':
-        befor = False
-        after = False
-    return befor, after
-
-
 def process_lines(lines, out):
     sentence = ""
     after = True
@@ -30,13 +10,8 @@ def process_lines(lines, out):
                 out.write(sentence.lstrip(' ') + "\n")
                 sentence = ""
             continue
-        # whitespace
-        if first_column in specSymbols:
-            befor, after = where_space(first_column)
-            sentence += (" " if befor else "") + first_column
-        else:
-            sentence += (" " if after else "") + first_column
-            after = True
+
+        sentence += " " + first_column
 
 pathToFile = "./ru_ar_cut.txt"
 pathToResultFile = "./task2_text.txt"
