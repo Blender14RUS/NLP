@@ -27,22 +27,19 @@ def slice_text(source_text, slice_count):
     return slices
 
 
-def create_token_list(slices, is_bigram_needed):
+def create_token_list(slices):
     token_list = []
     for i, paragraph in enumerate(slices):
         chunk_text = ' '.join(paragraph)
         file_tokens = [(w, i, j) for j, w in enumerate(nltk.tokenize.word_tokenize(chunk_text))]
         file_tokens = list(set(file_tokens))
         token_list.extend(file_tokens)
-        if is_bigram_needed:
-            bigram_tokens = [(" ".join(w), i, j) for j, w in enumerate(nltk.bigrams(nltk.tokenize.word_tokenize(chunk_text)))]
-            bigram_tokens = list(set(bigram_tokens))
-            token_list.extend(bigram_tokens)
+
     return sorted(token_list, key=itemgetter(0, 1))
 
 
-def create_positional_index(slices, is_bigram_needed):
-    token_list = create_token_list(slices, is_bigram_needed)
+def create_positional_index(slices):
+    token_list = create_token_list(slices)
     pos_index = {}
     for (word, doc_no, word_index) in token_list:
         if word not in pos_index:
@@ -92,7 +89,7 @@ def main():
     slices = slice_text(sent_token_list, slices_count)
     print(slices)
 
-    pos_index = create_positional_index(slices, False)
+    pos_index = create_positional_index(slices)
     pprint(pos_index)
 
 
