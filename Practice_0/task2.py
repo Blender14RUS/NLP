@@ -1,6 +1,5 @@
 def process_lines(lines, out):
     sentence = ""
-    after = True
     for line in lines:
         first_column = line.split()[0].strip()
         #skip other tags

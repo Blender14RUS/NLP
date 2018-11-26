@@ -10,7 +10,6 @@ with open(pathToFile, 'r', encoding="utf-8") as file:
 
 tokens = nltk.tokenize.regexp_tokenize(text, r'(\w+[-\w+]*)')
 
-#leaved only word
 #words = [word for word in tokens if word.isalpha()]
 
 #remove stoowords

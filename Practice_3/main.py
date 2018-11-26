@@ -29,10 +29,4 @@ print(model.wv.most_similar(positive=['Marfa']))
 print('\nSimilar for "Petersburg"')
 print(model.wv.most_similar(positive=['Petersburg']))
 
-print('\nSimilar for "Ivolgin"')
-print(model.wv.most_similar(positive=['Ivolgin']))
-
-print('\nSimilar for "Aglaya"')
-print(model.wv.most_similar(positive=['Aglaya']))
-
 model.wv.save_word2vec_format("IDIOT_preproc.model")
