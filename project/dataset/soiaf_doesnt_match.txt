@@ -6,58 +6,58 @@
 "        c) quite far away, but for example still named entites, d) very far, totally different word context, word category etc
 
 : family-siblings
-Jaime Tyrion Cersei :: Tywin Joffrey Tommen Myrcella Kevan Ned Oberyn Balon Ramsay Doran Harrenhal Targaryen Craster Dorne Trident raven food dragon sword sun
-Robb Bran Sansa Arya :: Catelyn Ned Robert Hodor Myrcella Kevan Oberyn Balon Ramsay Doran Harrenhal Targaryen Craster Dorne Trident raven food dragon sword sun
-Daenerys Viserys Rhaegar :: Arys Aemon Drogon Viserion Drogo Ned Oberyn Balon Ramsay Doran Harrenhal Stark Craster Winterfell Trident direwolve food lion sword sun
-Joffrey Tommen Myrcella :: Jaime Cersei Kevan Tywin Tyrion Robb Bran Sansa Ned Oberyn Harrenhal Stark Craster Winterfell Trident direwolve food dragon sword sun 
-Maron Asha Theon :: Balon Euron Damphair Robb Bran Jaime Cersei Kevan Tywin Tyrion Harrenhal Stark Craster Winterfell Trident direwolve food dragon sword sun 
+Джейме Тирион Серсея :: Тайвин Джоффри Томмен Мирцелла Киван Нед Оберин Бейлон Рамси Доран Харренхол Таргариен Крастер Дорн Трезубец ворон еда дракон меч солнце
+Робб Бран Санса Арья :: Кейтилин Нед Роберт Ходор Мирцелла Киван Оберин Бейлон Рамси Доран Харренхол Таргариен Крастер Дорн Трезубец ворон еда дракон меч солнце
+Дейенерис Визерис Рейгар :: Эйрис Эймон Дрогон Визерион Дрого Нед Оберин Бейлон Рамси Доран Харренхол Старк Крастер Винтерфелл Трезубец лютоволк еда лев меч солнце
+Джоффри Томмен Мирцелла :: Джейме Серсея Киван Тайвин Тирион Робб Бран Санса Нед Оберин Харренхол Старк Крастер Винтерфелл Трезубец лютоволк еда дракон меч солнце
+Марон Аша Теон :: Бейлон Эурон Мокроголовый Робб Бран Джейме Серсея Киван Тайвин Тирион Харренхол Старк Крастер Винтерфелл Трезубец лютоволк еда дракон меч солнце
 
-: names-of-houses 
-Umber Florent Mormont Greyjoy Tyrell Frey Karstark Bolton Martell Stark Lannister Greyjoy Baratheon Targaryen :: Jaime Ned Jon Tywin Arya Varys Littlefinger Mya Podrick Bronn Lys Trident Braavos Shaggydog Mander drink water sun wood raven
+: names-of-houses
+Амбер Флорент Мормонт Грейджой Тирелл Фрей Карстарк Болтон Мартелл Старк Ланнистер Грейджой Баратеон Таргариен :: Джейме Нед Джон Тайвин Арья Варис Мизинец Мия Подрик Бронн Лисс Трезубец Браавос Лохматик Мандер пить вода солнце дерево ворон
 
 : Lannister clan
-Joanna Tywin Kevan Tyrion Cersei Jaime Lancel :: Loras Ned Jon Arya Theon Baratheon Stark Bolton Greyjoy Targaryen Shaggydog Mander Rhaegal Harrenhal Winterfell food sword sun wood raven 
+Джоанна Тайвин Киван Тирион Серсея Джейме Лансель :: Лорас Нед Джон Арья Теон Баратеон Старк Болтон Грейджой Таргариен Лохматик Мандер Рейгаль Харренхол Винтерфелл еда меч солнце дерево ворон
 
-: Targaryen clan 
-Aegon Rhaegar Arys Viserys Daenerys :: Loras Ned Jon Arya Theon Baratheon Stark Bolton Greyjoy Lannister Shaggydog Mander Rhaegal Harrenhal Winterfell food sword sun wood raven 
+: Targaryen clan
+Aegon Рейгар Эйрис Визерис Дейенерис :: Лорас Нед Джон Арья Теон Баратеон Старк Болтон Грейджой Ланнистер Лохматик Мандер Рейгаль Харренхол Винтерфелл еда меч солнце дерево ворон
 
-: Greyjoy clan 
-Aeron Quellon Balon Euron Victarion Asha Theon :: Loras Ned Jon Arya Theon Baratheon Stark Bolton Targaryen Lannister Shaggydog Mander Rhaegal Harrenhal Winterfell food sword sun wood raven 
+: Greyjoy clan
+Эйрон Квеллон Бейлон Эурон Виктарион Аша Теон :: Лорас Нед Джон Арья Теон Баратеон Старк Болтон Таргариен Ланнистер Лохматик Мандер Рейгаль Харренхол Винтерфелл еда меч солнце дерево ворон
 
 : Stark clan
-Lyanna Ned Catelyn Robb Arya Sansa Rickon Bran :: Loras Tyrion Theon Myrcella Roose Baratheon Lannister Bolton Greyjoy Targaryen Viserion Mander Rhaegal Harrenhal Oldtown food sword sun wood raven 
+Лианна Нед Кейтилин Робб Арья Санса Рикон Бран :: Лорас Тирион Теон Мирцелла Русе Баратеон Ланнистер Болтон Грейджой Таргариен Визерион Мандер Рейгаль Харренхол Старомест еда меч солнце дерево ворон
 
 : direwolves
-Shaggydog Nymeria Ghost :: Arya Jon Ned Sansa Bran Viserion Rhaegal Drogon Balerion Stark Lannister Bolton Greyjoy Targaryen Harrenhal food sword sun wood read 
+Лохматик Нимерия Призрак :: Арья Джон Нед Санса Бран Визерион Рейгаль Дрогон Балерион Старк Ланнистер Болтон Грейджой Таргариен Харренхол еда меч солнце дерево читать
 
 " http://awoiaf.westeros.org/index.php/Category:Archmaesters
-: archmaesters 
-Ebrose Marwyn Walgrave :: Oldtown Samwell Sam Tarly Luwin Tywin Oberyn Margaery Balon Ramsay Craster Pyke Harrenhal Winterfell Dorne food sword sun wood fight 
+: archmaesters
+Эброз Марвин Валгрейв :: Старомест Сэмвелл Сэм Тарли Лювин Тайвин Оберин Маргери Бейлон Рамси Крастер Пайк Харренхол Винтерфелл Дорн еда меч солнце дерево сражение
 
 " http://awoiaf.westeros.org/index.php/Category:Dragons
-: dragons 
-Viserion Rhaegal Drogon Balerion :: Daenerys Viserys Arys Rhaegar Targaryen Shaggydog Nymeria Ghost Tyrion Jon Oldtown Trident Mander Bolton Greyjoy food sword sun wood fight
+: dragons
+Визерион Рейгаль Дрогон Балерион :: Дейенерис Визерис Эйрис Рейгар Таргариен Лохматик Нимерия Призрак Тирион Джон Старомест Трезубец Мандер Болтон Грейджой еда меч солнце дерево сражение
 
 " Nymeria is also the name of one direwolve!, also "Elia" is ambigious!
 " http://awoiaf.westeros.org/index.php/Category:Bastards
-: bastards 
-Jon Gendry Ramsay Mya :: Jaime Ned Tywin Arya Littlefinger Baratheon Lannister Bolton Greyjoy Targaryen Viserion Mander Rhaegal Harrenhal Oldtown food sword sun wood raven 
-Elia Tyene Obara :: Jaime Ned Tywin Arya Littlefinger Baratheon Lannister Bolton Greyjoy Targaryen Viserion Mander Rhaegal Harrenhal Oldtown food sword sun wood raven 
+: bastards
+Джон Джендри Рамси Мия :: Джейме Нед Тайвин Арья Мизинец Баратеон Ланнистер Болтон Грейджой Таргариен Визерион Мандер Рейгаль Харренхол Старомест еда меч солнце дерево ворон
+Элия Тиена Обара :: Джейме Нед Тайвин Арья Мизинец Баратеон Ланнистер Болтон Грейджой Таргариен Визерион Мандер Рейгаль Харренхол Старомест еда меч солнце дерево ворон
 
 " http://awoiaf.westeros.org/index.php/Category:Rivers
-: rivers 
-Mander Rhoyne Trident :: Westeros Bay Oldtown Harrenhal Gulltown Winterfell Craster Lys Myr Braavos Baratheon Lannister Bolton Greyjoy Targaryen direwolve sword fight read raven
+: rivers
+Мандер Ройна Трезубец :: Вестерос Залив Старомест Харренхол Чаячий_город Винтерфелл Крастер Лисс Мир Браавос Баратеон Ланнистер Болтон Грейджой Таргариен лютоволк меч сражение читать ворон
 
 " http://awoiaf.westeros.org/index.php/Category:Free_Cities 
-: free cities 
-Braavos Lys Myr Pentos Volantis Tyros Norvos :: Bay Westeros Mander Rhoyne Oldtown Winterfell Lannisport Harrenhal Gulltown Trident Baratheon Lannister Bolton Greyjoy Targaryen direwolve sword fight read raven
+: free cities
+Браавос Лисс Мир Пентос Волантис Тирош Норвос :: Залив Вестерос Мандер Ройна Старомест Винтерфелл Ланниспорт Харренхол Чаячий_город Трезубец Баратеон Ланнистер Болтон Грейджой Таргариен лютоволк меч сражение читать ворон
 
-: Westeros cities 
-Highgarden Oldtown Lannisport Gulltown :: Braavos Lys Myr Pentos Volantis Mander Rhoyne Bay Bolton Baratheon Viserion Rhaegal Drogon Balerion Ghost direwolve sword fight read raven 
+: Westeros cities
+Хайгарден Старомест Ланниспорт Чаячий_город :: Браавос Лисс Мир Пентос Волантис Мандер Ройна Залив Болтон Баратеон Визерион Рейгаль Дрогон Балерион Призрак лютоволк меч сражение читать ворон
 
 
 " http://awoiaf.westeros.org/index.php/Category:Places_in_Dorne
-" : places in Dorne 
-" Sunspear Yronwood Lemonwood :: Winterfell Lannisport Oldtown Harrenhal Gulltown Lys Myr Braavos Bay Trident Baratheon Lannister Bolton Greyjoy Targaryen direwolve sword fight read raven
+" : places in Dorne
+" Солнечное_Копье Айронвуд Лимонная_Роща :: Винтерфелл Ланниспорт Старомест Харренхол Чаячий_город Лисс Мир Браавос Залив Трезубец Баратеон Ланнистер Болтон Грейджой Таргариен лютоволк меч сражение читать ворон
 
 :end
