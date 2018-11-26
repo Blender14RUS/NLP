@@ -22,7 +22,7 @@ with open("2638-0.txt", "r", encoding="utf8") as file:
             resultFile.write('\n')
 
 sentences = LineSentence("res.txt")
-model = gensim.models.Word2Vec(sentences)
+model = gensim.models.Word2Vec(sentences, min_count=5, size=300, workers=4, window=10, sg=1, negative=5)
 print('Similar for "Marfa"')
 print(model.wv.most_similar(positive=['Marfa']))
 
