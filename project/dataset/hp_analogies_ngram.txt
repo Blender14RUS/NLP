@@ -1,0 +1,54 @@
+" : professor-subject
+" "Professor_Макгонагалл трансфигурация
+" "Professor_Трелони прорицания
+" Professor_Флитвик чары
+" "Professor_Sprout herbology
+
+: Yule_ball-gentleman-lady
+Гарри Парвати_Патил
+Симус_Финниган Лаванда_Браун
+Драко_Малфой Пэнси_Parkinson
+Седрик_Диггори Чжоу_Чанг
+Виктор_Krum Гермиона_Грейнджер
+
+: House-head_of_the_House
+Гриффиндор Professor_Макгонагалл
+Пуффендуй Professor_Sprout
+Когтевран Professor_Флитвик
+
+: wife-husband
+Ханна_Аббот Невилл_Долгопупс
+Гермиона_Грейнджер Рональд_Уизли
+
+: character-where_they_work
+Madam_Rosmerta pub
+Madam_Pomfrey hospital
+Madam_Malkin shop
+Madam_Pince library
+
+: character-creature
+Mrs_Норрис кот
+"Mrs_Figg squib
+Mrs_Дурсль muggle
+Mrs_Долгопупс ведьма
+Mrs_Блэк ведьма
+Mr_Уизли волшебник
+"Mr_Филч squib
+Mr_Малфой волшебник
+Mr_Roberts muggle
+
+: character-love_interest
+Кормак_McLaggen Гермиона_Грейнджер
+Лаванда_Браун Рональд_Уизли
+Гарри Чжоу_Чанг
+Виктор_Krum Гермиона_Грейнджер
+
+: Гриффиндор-Quidditch-team
+Кэти_Белл chaser
+Анджелина_Johnson chaser
+Алисия_Spinnet chaser
+"Джордж_Уизли beater
+Оливер_Вуд keeper
+"Гарри_Поттер seeker
+
+:end

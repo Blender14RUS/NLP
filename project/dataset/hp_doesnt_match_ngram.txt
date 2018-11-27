@@ -1,0 +1,26 @@
+: geographical-objects
+"Годрик's_Hollow Shrieking_Shack Grimmauld_Place Forbidden_Forest :: Гриффиндор_Tower Когтевран_Tower Astronomy_Tower North_Tower Дамблдор's_office Рон Гермиона Гарри Драко Полумна library hospital corridor bathroom classroom hippogriff thestral bowtruckle вейла unicorn
+Годрик's_Hollow Shrieking_Shack Grimmauld_Place Forbidden_Forest Гриффиндор_Tower Когтевран_Tower Astronomy_Tower North_Tower Дамблдор's_office :: corridor Дамблдор river library hospital Professor_Флитвик Professor_Sprout Professor_Tofty bathroom Гриффиндор Рон Гермиона Гарри Драко Полумна unicorn волшебная_палочка ink волшебник волшебная_палочка
+
+
+: closest-friends
+Рональд_Уизли Гермиона_Грейнджер Гарри :: Джинни Фред Джордж_Уизли Полумна_Лавгуд Невилл_Долгопупс Седрик_Диггори Флёр_Делакур Билл Чжоу_Чанг Виктор_Krum Professor_Макгонагалл Professor_Трелони Professor_Флитвик Professor_Sprout Professor_Tofty hippogriff thestral bowtruckle вейла werewolf
+
+: unforgivable-curses
+Imperius Cruciatus Avada_Kedavra :: Sectumsempra Alohomora Lumos Expelliarmus Wingardium Гриффиндор Квоффл Пуффендуй Хогвартс Снитч Невилл_Долгопупс Седрик_Диггори Флёр_Делакур Билл Чжоу_Чанг весы Огонь чары пергамент вейла
+
+:: Ariadna please add: list of all curses!
+
+: members-of-Order_of_the_Phoenix
+Альбус_Дамблдор Аластор_Грюм Kingsley_Shacklebolt Dedalus_Diggle :: Беллатриса_Лестрейндж Люциус_Малфой Эрни_Макмиллан Колин_Криви Финеас_Nigellus Гриффиндор Квоффл Пуффендуй Хогвартс Снитч Sectumsempra Alohomora Lumos Expelliarmus Wingardium hippogriff thestral bowtruckle вейла werewolf
+
+: ministers-for-magic
+Корнелиус_Фадж Rufus_Scrimgeour Kingsley_Shacklebolt :: Professor_Макгонагалл Professor_Трелони Professor_Флитвик Professor_Sprout Professor_Tofty Рональд_Уизли Эрни_Макмиллан Гарри Колин_Криви Чжоу_Чанг Гриффиндор Квоффл Пуффендуй Хогвартс Снитч library hospital corridor bathroom classroom
+
+: ministry_of_magic-employees
+Корнелиус_Фадж Долорес_Амбридж Mr_Крауч Amelia_Bones :: Джинни Фред Джордж_Уизли Полумна_Лавгуд Невилл_Долгопупс Седрик_Диггори Гриффиндор_Tower Когтевран_Tower Astronomy_Tower North_Tower Дамблдор's_office Imperius Cruciatus Avada_Kedavra Sectumsempra hippogriff thestral bowtruckle вейла werewolf
+
+: Слизерин-members
+Маркус_Flint Драко_Малфой Пэнси_Parkinson :: Альбус_Дамблдор Джинни Kingsley_Shacklebolt Dedalus_Diggle Невилл_Долгопупс Гриффиндор_Tower Когтевран_Tower Astronomy_Tower North_Tower Дамблдор's_office Imperius Cruciatus Avada_Kedavra Sectumsempra Alohomora hippogriff thestral bowtruckle вейла werewolf
+
+:end
