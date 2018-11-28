@@ -11,7 +11,7 @@ all_words = []
 
 for name in glob.glob(INFILE+'*'):
 
-    for line in open(name):
+    for line in open(name, encoding="utf8"):
         if line.startswith(':') or line.startswith('"') or not line.strip():
             continue
 
@@ -25,7 +25,7 @@ all_words = list(set(all_words)) # make unique
 print(all_words)
 
 ### ok, now we have the words, get the counts from the book
-book_text = open(BOOK).read()
+book_text = open(BOOK, encoding="utf8").read()
 
 word_counts = [] 
 for word in all_words:
