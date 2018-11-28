@@ -1,44 +1,48 @@
 import sys, glob, pickle
 from operator import itemgetter
 
-INFILE = sys.argv[1]
-BOOK = sys.argv[2]
-
+DEFAULT_ENCODING = 'utf-8'
 MIN_NUM = 5
 
-all_words = [] 
+def check_frequencies(INFILE, BOOK, encoding):
+    all_words = []
+    for name in glob.glob(INFILE + '*'):
 
+        for line in open(name, encoding=encoding):
+            if line.startswith(':') or line.startswith('"') or not line.strip():
+                continue
 
-for name in glob.glob(INFILE+'*'):
+            words = line.split(' ')
+            words = [word.strip() for word in words]
+            all_words.extend(words)
 
-    for line in open(name, encoding="utf8"):
-        if line.startswith(':') or line.startswith('"') or not line.strip():
-            continue
+    all_words = list(set(all_words))  # make unique
 
-        words = line.split(' ')
-        words = [word.strip() for word in words]
-        all_words.extend(words)
+    print(all_words)
 
+    ### ok, now we have the words, get the counts from the book
+    book_text = open(BOOK, encoding=encoding).read()
 
-all_words = list(set(all_words)) # make unique
+    word_counts = []
+    for word in all_words:
+        count = book_text.count(word)
+        word_counts.append((word, count))
 
-print(all_words)
+    words_sorted = sorted(word_counts, key=itemgetter(1))
 
-### ok, now we have the words, get the counts from the book
-book_text = open(BOOK, encoding="utf8").read()
+    for w in words_sorted:
+        if w[1] <= MIN_NUM * 3:
+            print(w)
 
-word_counts = [] 
-for word in all_words:
-    count = book_text.count(word)
-    word_counts.append( (word, count) )
+    dw = dict(words_sorted)
 
+    pickle.dump(dw, open(INFILE + '_freq.pickle', 'wb'))
 
-words_sorted = sorted(word_counts,key=itemgetter(1))
+def main():
+    print("\n\tHarry Potter\n")
+    check_frequencies("./hp", "../HP_processed.txt", DEFAULT_ENCODING)
+    print("\n\n\tA Song of Ice and Fire\n")
+    check_frequencies("./soiaf", "../ASOIF_processed.txt", DEFAULT_ENCODING)
 
-for w in words_sorted:
-    if w[1] <= MIN_NUM*3:
-        print(w)
-
-dw = dict(words_sorted)
-
-pickle.dump(dw, open('freq_XX', 'wb'))
+if __name__ == "__main__":
+    main()
