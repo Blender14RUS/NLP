@@ -1,8 +1,8 @@
 import gensim
 from gensim.models.word2vec import LineSentence
 
-INPUT_FILE = "ASOIF_processed.txt"
-OUTPUT_FILE = "asoif.model"
+INPUT_FILE = "HP_processed.txt"
+OUTPUT_FILE = "models/hp.model"
 
 
 def train_model(sentences):
