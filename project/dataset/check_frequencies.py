@@ -36,7 +36,7 @@ def check_frequencies(INFILE, BOOK, encoding):
 
     dw = dict(words_sorted)
 
-    pickle.dump(dw, open(INFILE + '_freq.pickle', 'wb'))
+    pickle.dump(dw, open('freq_' + INFILE[2:] + '.pickle', 'wb'))
 
 def main():
     print("\n\tHarry Potter\n")
