@@ -36,13 +36,13 @@ def check_frequencies(INFILE, BOOK, encoding):
 
     dw = dict(words_sorted)
 
-    pickle.dump(dw, open('freq_' + INFILE[2:] + '.pickle', 'wb'))
+    pickle.dump(dw, open('freq_' + INFILE + '.pickle', 'wb'))
 
 def main():
     print("\n\tHarry Potter\n")
-    check_frequencies("./hp", "../HP_processed.txt", DEFAULT_ENCODING)
+    check_frequencies("hp", "../HP_processed.txt", DEFAULT_ENCODING)
     print("\n\n\tA Song of Ice and Fire\n")
-    check_frequencies("./soiaf", "../ASOIF_processed.txt", DEFAULT_ENCODING)
+    check_frequencies("soiaf", "../ASOIF_processed.txt", DEFAULT_ENCODING)
 
 if __name__ == "__main__":
     main()
