@@ -26,7 +26,7 @@ if sys.argv[1].lower() == 'asoif':
     BOOK_SERIES="ASOIF"
 elif sys.argv[1].lower() == 'hp':
     BOOK_SERIES="HP" 
-elif sys.argv[1].lower() == 'sh': 
+elif sys.argv[1].lower() == 'sh':
     BOOK_SERIES="SH" ## new: Sherlock Holmes book
 
 else:
@@ -56,7 +56,16 @@ MODEL_PATH="../models/"
 
 if BOOK_SERIES == "ASOIF":
     METHODS = [
-        ('asoif', 'vec'),
+        # w2vec models
+        ('asoif_w', 'vec'),
+        ('asoif_w1', 'vec'),
+        ('asoif_w2', 'vec'),
+        ('asoif_w3', 'vec'),
+        ('asoif_w4', 'vec'),
+        # fastText models
+        ('asoif_f', 'vec'),
+        ('asoif_f1', 'vec'),
+        ('asoif_f2', 'vec'),
     ]
 
     if NGRAMS:
@@ -70,7 +79,16 @@ if BOOK_SERIES == "ASOIF":
 
 if BOOK_SERIES == "HP":
     METHODS = [
-        ('hp', 'vec'),
+        # w2vec models
+        ('hp_w', 'vec'),
+        ('hp_w1', 'vec'),
+        ('hp_w2', 'vec'),
+        ('hp_w3', 'vec'),
+        ('hp_w4', 'vec'),
+        # fastText models
+        ('hp_f', 'vec'),
+        ('hp_f1', 'vec'),
+        ('hp_f2', 'vec'),
     ]
 
     if NGRAMS:
@@ -104,7 +122,7 @@ if BOOK_SERIES == "ASOIF":
         DOESNT_MATCH_FILE = "../dataset/questions_soiaf_doesnt_match.txt"
         ANALOGIES_SECTIONS = ['firstname-lastname', 'child-father', 'husband-wife', 'geo-name-location', 'houses-seats', 'total']
         DOESNT_MATCH_SECTIONS = [': family-siblings',  ': names-of-houses', ': Stark clan', ': free cities', 'TOTAL']
-        FREQ_FILE = "../dataset/soiaf_freq.pickle"
+        FREQ_FILE = "../dataset/freq_soiaf.pickle"
 
 
 if BOOK_SERIES == "HP":
@@ -124,4 +142,4 @@ if BOOK_SERIES == "HP":
             ANALOGIES_SECTIONS = ['firstname-lastname', 'child-father', 'husband-wife', 'name-species', 'total']
             #DOESNT_MATCH_SECTIONS = [': family-members', ': Gryffindor-members', ': magic-creatures', ': wizards-animagi', 'TOTAL'] 
             DOESNT_MATCH_SECTIONS = [': family-members', ': Gryffindor-members', ': magic-creatures', ': professors', 'TOTAL'] 
-            FREQ_FILE = "../dataset/hp_freq.pickle"
+            FREQ_FILE = "../dataset/freq_hp.pickle"
