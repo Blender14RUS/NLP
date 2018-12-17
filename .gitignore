@@ -1,3 +1,4 @@
 *.idea
 /project/asoif*
 /project/hp*
+/project/src/__pycache__
