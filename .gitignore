@@ -1,5 +1,4 @@
-.idea
-/project/asoif.txt
-/project/hp.txt
-/project/asoif_processed.txt
-/project/hp_processed.txt
+*.idea
+/project/asoif*
+/project/hp*
+/project/src/__pycache__

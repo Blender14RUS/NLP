@@ -111,18 +111,18 @@ if BOOK_SERIES == "ASOIF":
     PRINT_DETAILS = False ## verbose debugging of eval results
 
     if NGRAMS:
-        ANALOGIES_FILE = "../datasets/questions_soiaf_analogies_ngram.txt"
-        DOESNT_MATCH_FILE = "../datasets/questions_soiaf_doesnt_match_ngram.txt"
+        ANALOGIES_FILE = "../datasets/questions_asoif_analogies_ngram.txt"
+        DOESNT_MATCH_FILE = "../datasets/questions_asoif_doesnt_match_ngram.txt"
         ANALOGIES_SECTIONS = ['name-nickname', 'child-father', 'total']
         DOESNT_MATCH_SECTIONS = [': bays', ': gods', ': cities-fortresses', ': Maesters', ': Houses', 'TOTAL']
         FREQ_FILE = "../datasets/freq_asoif_ngram.pickle"
 
     else:
-        ANALOGIES_FILE = "../dataset/questions_soiaf_analogies.txt"
-        DOESNT_MATCH_FILE = "../dataset/questions_soiaf_doesnt_match.txt"
+        ANALOGIES_FILE = "../dataset/questions_asoif_analogies.txt"
+        DOESNT_MATCH_FILE = "../dataset/questions_asoif_doesnt_match.txt"
         ANALOGIES_SECTIONS = ['firstname-lastname', 'child-father', 'husband-wife', 'geo-name-location', 'houses-seats', 'total']
         DOESNT_MATCH_SECTIONS = [': family-siblings',  ': names-of-houses', ': Stark clan', ': free cities', 'TOTAL']
-        FREQ_FILE = "../dataset/freq_soiaf.pickle"
+        FREQ_FILE = "../dataset/freq_asoif.pickle"
 
 
 if BOOK_SERIES == "HP":

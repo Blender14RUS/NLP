@@ -1,7 +1,4 @@
-# nlp2018_hp_asoif_rus
 Russian language evaluation of basic ASOIF and HP datasets.
-
-_Currently on step 19.M2_
 
 ### How to?
 1. Generate models with next command in console: `python create_model.py {hp|asoif} {w|w1|w2|w3|w4|f|f1|f2}`
