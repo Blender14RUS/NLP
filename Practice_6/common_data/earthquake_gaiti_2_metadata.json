@@ -1,0 +1,11 @@
+{
+	"URI": "https://lenta.ru/news/2010/01/13/aid/",
+  "news_agency": "Лента.Ру",
+	"title": "США направили на Гаити спасателей для ликвидации последствий землетрясения",
+	"publishing_date": "13.01.2010",
+	"event_date": "13.01.2010",
+	"previous_subevent_uri": "https://lenta.ru/news/2010/01/13/quake",
+	"next_subevent_uri": "https://lenta.ru/news/2010/01/13/looting",
+	"topic": "usa_sends_help",
+  "general_topic": "earthquake_gaiti_2010"
+}

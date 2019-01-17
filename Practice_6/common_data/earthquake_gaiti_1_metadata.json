@@ -1,0 +1,11 @@
+{
+	"URI": "https://lenta.ru/news/2010/01/13/quake",
+  "news_agency": "Лента.Ру",
+	"title": "Мощное землетрясение разрушило больницу на Гаити",
+	"publishing_date": "13.01.2010",
+	"event_date": "13.01.2010",
+	"previous_subevent_uri": null,
+	"next_subevent_uri": "https://lenta.ru/news/2010/01/13/aid/",
+	"topic": "earthquake_ruins_hospital",
+  "general_topic": "earthquake_gaiti_2010"
+}

@@ -3,7 +3,6 @@ import collections
 import math
 from nltk.collocations import *
 
-
 # T-score
 def calculate_trigrams(tokens):
     words_dict = collections.Counter(tokens)

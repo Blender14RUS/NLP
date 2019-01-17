@@ -1,0 +1,11 @@
+{
+	"URI": "https://www.rbc.ru/rbcfreenews/20100116211720.shtml",
+  "news_agency": "РБК",
+	"title": "В столице Гаити Порт-о-Пренсе, пострадавшем от сильного землетрясения, зафиксированы новые подземные толчки",
+	"publishing_date": "16.01.2010",
+	"event_date": "13.01.2010",
+	"previous_subevent_uri": "https://lenta.ru/news/2010/01/15/money/",
+	"next_subevent_uri": "https://www.interfax.ru/russia/128359",
+	"topic": "aftershocks",
+  "general_topic": "earthquake_gaiti_2010"
+}

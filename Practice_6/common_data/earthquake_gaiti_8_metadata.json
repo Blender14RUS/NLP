@@ -1,0 +1,11 @@
+{
+	"URI": "https://www.interfax.ru/russia/128359",
+  "news_agency": "Интерфакс",
+	"title": "Жертвами землетрясения в Гаити стали более 222 тысяч человек",
+	"publishing_date": "18.03.2010",
+	"event_date": "13.01.2010",
+	"previous_subevent_uri": "https://www.rbc.ru/rbcfreenews/20100116211720.shtml",
+	"next_subevent_uri": null,
+	"topic": "earthquake_victims_official",
+  "general_topic": "earthquake_gaiti_2010"
+}

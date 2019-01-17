@@ -1,0 +1,11 @@
+{
+	"URI": "https://www.rbc.ru/rbcfreenews/5bbd30b59a794780b259fe9e",
+    "news_agency": "РБК",
+	"title": "Трамп ввел режим ЧП в штате Флорида из-за надвигающегося урагана «Майкл»",
+	"publishing_date": "10.10.2018",
+	"event_date": "10.10.2018",
+	"previous_subevent_uri": "",
+	"next_subevent_uri": "https://www.rbc.ru/photoreport/12/10/2018/5bc056bc9a79473ef4b795a4",
+	"topic": "governement_reaction",
+    "general_topic": "storm_michael_2018"
+}
