@@ -49,7 +49,7 @@ def bagofwords(sentence, words):
 
 def main():
     source_file = read_file(DEFAULT_PATH, DEFAULT_ENCODING)
-    model = create_model("data.txt")
+    create_model("data.txt")
 
     bigrams = bigram(source_file)
     wordlist = []
@@ -57,12 +57,7 @@ def main():
         wordlist.append(word[0])
         wordlist.append(word[1])
 
-    vectors = []
-    for line in source_file.splitlines():
-        vectors.append(bagofwords(line, wordlist))
-    # model.wv.save_word2vec_format("ft_model.vec")
-
-    pickle.dump(vectors, open('model', 'wb'))
+    pickle.dump(wordlist, open('model', 'wb'))
 
 if __name__ == "__main__":
     main()

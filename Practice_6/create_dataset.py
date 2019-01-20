@@ -5,6 +5,7 @@ import json
 import gensim
 import numpy as np
 import csv
+import pickle
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -35,7 +36,7 @@ def read_metadata(path, encoding):
 
 
 def load_model(filename):
-    return gensim.models.KeyedVectors.load_word2vec_format(filename, binary=False)
+    return pickle.load(open("model", 'rb'))
 
 
 def create_doc2vec(path):
@@ -46,6 +47,15 @@ def create_doc2vec(path):
 
     return docs
 
+def bagofwords(single_text, model):
+    # frequency word count
+    bag = np.zeros(len(model))
+    for word in single_text.split(' '):
+        for i, b in enumerate(model):
+            if b == word:
+                bag[i] += 1
+
+    return np.array(bag)
 
 def get_word_vectors(model, single_text, common_vectorizer):
     single_vectorizer = TfidfVectorizer()
@@ -54,7 +64,7 @@ def get_word_vectors(model, single_text, common_vectorizer):
     word_vectors = {}
     for word, i in single_vectorizer.vocabulary_.items():
         common_index = common_vectorizer.vocabulary_[word]
-        if word in model.vocab:
+        if word in model:
             word_vectors[common_index] = model.get_vector(word)
         else:
             word_vectors[common_index] = np.zeros(100)
@@ -88,8 +98,7 @@ def build_dataset(csvwriter, metadata, reduced_matrix, mode):
 def main():
     remove_files()
 
-    model = load_model("ft_model.vec")
-    print("Vector size: " + str(model.vector_size))
+    model = load_model("model")
 
     docs = create_doc2vec("common_data/*mystem.txt")
     print("Docs count: " + str(len(docs)))
@@ -100,7 +109,8 @@ def main():
 
     modified_matrix = []
     for idx, (filename, text) in enumerate(docs.items()):
-        word_vectors = get_word_vectors(model, text, vectorizer)
+        word_vectors = bagofwords(text, model)
+        # word_vectors = get_word_vectors(model, text, vectorizer)
         reduced_matrix = reduce_matrix(tfidf_matrix, word_vectors, idx)
         modified_matrix.extend(reduced_matrix)
         # print size
