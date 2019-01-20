@@ -51,8 +51,8 @@ def bagofwords(single_text, model):
     # frequency word count
     bag = np.zeros(len(model))
     for word in single_text.split(' '):
-        for i, b in enumerate(model):
-            if b == word:
+        for i, word1 in enumerate(model):
+            if word == word1:
                 bag[i] += 1
 
     return np.array(bag)
@@ -73,7 +73,7 @@ def get_word_vectors(model, single_text, common_vectorizer):
 
 
 def reduce_matrix(tfidf_matrix, word_vectors, idx):
-    wvec_length = len(list(word_vectors.values())[0])
+    wvec_length = len(list(word_vectors))
     reduced_matrix = []
     for row in tfidf_matrix[idx]:
         nrow = np.zeros(wvec_length)
@@ -87,7 +87,7 @@ def reduce_matrix(tfidf_matrix, word_vectors, idx):
 def build_dataset(csvwriter, metadata, reduced_matrix, mode):
     csvlist = []
     csvlist.append(metadata["URI"])
-    csvlist.extend(reduced_matrix.tolist()[0])
+    csvlist.extend(reduced_matrix.tolist())
     if mode == "events":
         csvlist.append(metadata["general_topic"])
     else:
@@ -111,17 +111,17 @@ def main():
     for idx, (filename, text) in enumerate(docs.items()):
         word_vectors = bagofwords(text, model)
         # word_vectors = get_word_vectors(model, text, vectorizer)
-        reduced_matrix = reduce_matrix(tfidf_matrix, word_vectors, idx)
-        modified_matrix.extend(reduced_matrix)
+        # reduced_matrix = reduce_matrix(tfidf_matrix, word_vectors, idx)
+        modified_matrix.extend(word_vectors)
         # print size
         metadata = read_metadata(filename.replace('mystem.txt', 'metadata.json'), DEFAULT_ENCODING)
         with open(DATASET_STEPS_FILENAME, 'a', encoding=DEFAULT_ENCODING, newline='') as csv_file:
             csvwriter = csv.writer(csv_file, quoting=csv.QUOTE_MINIMAL)
-            build_dataset(csvwriter, metadata, reduced_matrix, "steps")
+            build_dataset(csvwriter, metadata, word_vectors, "steps")
         with open(DATASET_EVENTS_FILENAME, 'a', encoding=DEFAULT_ENCODING, newline='') as csv_file:
             csvwriter = csv.writer(csv_file, quoting=csv.QUOTE_MINIMAL)
-            build_dataset(csvwriter, metadata, reduced_matrix, "events")
-    print("Reduced matrix size: " + str(len(modified_matrix)) + "x" + str(len(modified_matrix[0])))
+            build_dataset(csvwriter, metadata, word_vectors, "events")
+    # print("Reduced matrix size: " + str(len(modified_matrix)) + "x" + str(len(modified_matrix[0])))
 
 if __name__ == "__main__":
     main()
