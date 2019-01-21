@@ -4,6 +4,7 @@ from sklearn.metrics import f1_score, silhouette_score
 from sklearn.mixture import GaussianMixture
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
+from sklearn.decomposition import PCA
 
 import matplotlib.pyplot as plt
 import scipy.cluster.hierarchy as sch
@@ -81,37 +82,39 @@ def main():
     mean_shift(x_train, y_train, x_test, y_test, [2, 10, 1, 0.2, 60])
     print('*' * 100)
 
+    visualization(x_train, y_train, x_test)
 
 
-# def visualization(x_train, y_train, x_test):
-#     # K-Means --------------------------------------------------------------
-#     kmeans_model = KMeans(n_clusters=10, init='k-means++')
-#     X = kmeans_model.fit(x_train, y_train)
-#     labels=kmeans_model.labels_.tolist()
-#
-#     l = kmeans_model.fit_predict(x_test)
-#     pca = PCA(n_components=16).fit(x_train, y_train)
-#     datapoint = pca.transform(x_train)
-#
-#     plt.figure
-#     label1 = ["#FF0000", "#00FF00", "#0000FF", "#800080", "#7A0760", "#C8461C", "#A61FF7", "#9E17E2", "#AE0D02", "#67C6F3", "#7CBB2D", "#7C39B2", "#1412C0", "#46E54E", "#7A6415"	, "#791343"	, "#0C046B"	, "#67079C"	, "#8E2647"]
-#     color = [label1[i] for i in labels]
-#     plt.scatter(datapoint[:, 0], datapoint[:, 1], c=color)
-#
-#     centroids = kmeans_model.cluster_centers_
-#     centroidpoint = pca.transform(centroids)
-#     plt.scatter(centroidpoint[:, 0], centroidpoint[:, 1], marker='^', s=50, c='#000000')
-#     plt.show()
-#
-#     # Agglomerative Clustering--------------------------------------------------------------
-#     # create dendrogram
-#     dendrogram = sch.dendrogram(sch.linkage(x_train, method='ward'))
-#     # create clusters
-#     hc = AgglomerativeClustering(n_clusters=10, affinity = 'euclidean', linkage = 'complete')
-#     X = hc.fit(x_train)
-#     # save clusters for chart
-#     y_hc = hc.fit_predict(x_train)
-#     plt.show()
+
+def visualization(x_train, y_train, x_test):
+    # K-Means --------------------------------------------------------------
+    kmeans_model = KMeans(n_clusters=10, init='k-means++')
+    X = kmeans_model.fit(x_train, y_train)
+    labels=kmeans_model.labels_.tolist()
+
+    l = kmeans_model.fit_predict(x_test)
+    pca = PCA(n_components=16).fit(x_train, y_train)
+    datapoint = pca.transform(x_train)
+
+    plt.figure
+    label1 = ["#FF0000", "#00FF00", "#0000FF", "#800080", "#7A0760", "#C8461C", "#A61FF7", "#9E17E2", "#AE0D02", "#67C6F3", "#7CBB2D", "#7C39B2", "#1412C0", "#46E54E", "#7A6415"	, "#791343"	, "#0C046B"	, "#67079C"	, "#8E2647"]
+    color = [label1[i] for i in labels]
+    plt.scatter(datapoint[:, 0], datapoint[:, 1], c=color)
+
+    centroids = kmeans_model.cluster_centers_
+    centroidpoint = pca.transform(centroids)
+    plt.scatter(centroidpoint[:, 0], centroidpoint[:, 1], marker='^', s=50, c='#000000')
+    plt.show()
+
+    # Agglomerative Clustering--------------------------------------------------------------
+    # create dendrogram
+    dendrogram = sch.dendrogram(sch.linkage(x_train, method='ward'))
+    # create clusters
+    hc = AgglomerativeClustering(n_clusters=10, affinity = 'euclidean', linkage = 'complete')
+    X = hc.fit(x_train)
+    # save clusters for chart
+    y_hc = hc.fit_predict(x_train)
+    plt.show()
 
 
 if __name__ == "__main__":

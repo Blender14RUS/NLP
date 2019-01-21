@@ -3,10 +3,12 @@ import os
 import re
 import subprocess
 import shutil
+
+import nltk
 from nltk.corpus import stopwords
 
 
-russian_stopwords = stopwords.words("russian")
+stop_words = set(stopwords.words('russian'))
 DEFAULT_ENCODING="utf-8"
 RE_WORDS = r'(\w+[-\w+]*)'
 
@@ -33,8 +35,12 @@ def remove_punctuation(sentence):
 
 
 def remove_stopwords(sentence):
-    words = [word for word in sentence.split() if word not in russian_stopwords]
-    return " ".join(words)
+    tokens = nltk.tokenize.regexp_tokenize(sentence, r'(\w+)')
+    words = [word for word in tokens if word.isalpha()]
+    words = [word for word in words if word not in stop_words]
+    r = re.compile("[а-яА-Я]+")
+    russian = [w for w in filter(r.match, words)]
+    return (" ".join(russian)).strip()
 
 
 def lemmatize(input_file, output_file):
