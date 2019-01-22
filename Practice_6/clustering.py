@@ -94,7 +94,18 @@ def visualization(x_train, y_train, x_test):
 
     l = kmeans_model.fit_predict(x_test)
     pca = PCA(n_components=16).fit(x_train, y_train)
+
     datapoint = pca.transform(x_train)
+    print(datapoint[:, 0])
+    print(datapoint[:, 1])
+    print(datapoint[:, 1].max())
+
+    print(len(datapoint))
+
+    print(x_train[56])
+    print(x_train[44])
+    print(x_train[67])
+    print(x_train[4])
 
     plt.figure
     label1 = ["#FF0000", "#00FF00", "#0000FF", "#800080", "#7A0760", "#C8461C", "#A61FF7", "#9E17E2", "#AE0D02", "#67C6F3", "#7CBB2D", "#7C39B2", "#1412C0", "#46E54E", "#7A6415"	, "#791343"	, "#0C046B"	, "#67079C"	, "#8E2647"]
@@ -106,15 +117,15 @@ def visualization(x_train, y_train, x_test):
     plt.scatter(centroidpoint[:, 0], centroidpoint[:, 1], marker='^', s=50, c='#000000')
     plt.show()
 
-    # Agglomerative Clustering--------------------------------------------------------------
-    # create dendrogram
-    dendrogram = sch.dendrogram(sch.linkage(x_train, method='ward'))
-    # create clusters
-    hc = AgglomerativeClustering(n_clusters=10, affinity = 'euclidean', linkage = 'complete')
-    X = hc.fit(x_train)
-    # save clusters for chart
-    y_hc = hc.fit_predict(x_train)
-    plt.show()
+    # # Agglomerative Clustering--------------------------------------------------------------
+    # # create dendrogram
+    # dendrogram = sch.dendrogram(sch.linkage(x_train, method='ward'))
+    # # create clusters
+    # hc = AgglomerativeClustering(n_clusters=10, affinity = 'euclidean', linkage = 'complete')
+    # X = hc.fit(x_train)
+    # # save clusters for chart
+    # y_hc = hc.fit_predict(x_train)
+    # plt.show()
 
 
 if __name__ == "__main__":

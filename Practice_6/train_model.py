@@ -30,11 +30,11 @@ def create_model(filename):
     return model
 
 def bigram(source_file):
-    trigram_measures = nltk.collocations.BigramAssocMeasures()
+    bigrams_measures = nltk.collocations.BigramAssocMeasures()
     tokens = tokenize(source_file)
     text = nltk.Text(tokens)
     finder = BigramCollocationFinder.from_words(text)
-    bigrams = finder.nbest(trigram_measures.pmi, 100)
+    bigrams = finder.ngram_fd.most_common(100)
     return bigrams
 
 def bagofwords(sentence, words):
@@ -53,9 +53,10 @@ def main():
 
     bigrams = bigram(source_file)
     wordlist = []
-    for word in bigrams:
-        wordlist.append(word[0])
-        wordlist.append(word[1])
+    for bigra in bigrams:
+        words = bigra[0]
+        wordlist.append(words[0])
+        wordlist.append(words[1])
 
     pickle.dump(wordlist, open('model', 'wb'))
 
